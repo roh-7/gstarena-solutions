@@ -1,0 +1,8 @@
+*.out
+*.in
+*.exe
+.DS_Store
+*/.DS_Store
+*/*.in
+*/*.out
+Edu Round/#03/
