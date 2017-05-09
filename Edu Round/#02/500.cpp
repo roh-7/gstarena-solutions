@@ -1,39 +1,8 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <sstream>
-#include <queue>
-#include <deque>
-#include <bitset>
-#include <iterator>
-#include <list>
-#include <stack>
-#include <map>
-#include <set>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <limits>
-#include <time.h>
-#include <math.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <assert.h>
 
 using namespace std;
 
-#define INF (int)1e9
-#define EPS 1e-9
-#define PI 3.1415926535897932384626433832795
-#define MOD 1000000007
-
-typedef pair<int, int> PII;
-typedef vector<int> VI;
-typedef vector<string> VS;
-typedef vector<PII> VII;
-
+// To check if you got all +s
 bool check(char s[])
 {
 	int l = strlen(s);
@@ -46,21 +15,21 @@ bool check(char s[])
 
 int main()
 {
-	freopen("2_1493873240.in", "r", stdin);
-	freopen("2_1493873240.out", "w", stdout);
+	freopen("500.in", "r", stdin);
+	freopen("500.out", "w", stdout);
 	int tt,j;
 	scanf("%d", &tt);
 	for(int qq = 1; qq <= tt; qq++){
 		
 		char s[101];
 		scanf("%s", s);
-
+		// Check if it is already all +s
 		int l = strlen(s);
 		if(check(s))printf("Case #%d: 0\n", qq);
 		else
 		{
 			int count = 0;
-				
+			// Start from right, everytime you get a -, invert all from that index position to left, and increment your count
 			//Do the magic!
 			for(int i = l-1; i >= 0; i--)
 			{
@@ -75,7 +44,6 @@ int main()
 				}
 				if(check(s))break;
 			}
-
 			printf("Case #%d: %d\n", qq, count);
 		}
 	}
