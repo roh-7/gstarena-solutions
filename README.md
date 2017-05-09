@@ -1,12 +1,12 @@
 # gstarena-solutions
 
 ## About
-This repository will contain all the solutions and samples covering topics as discussed in GST Arena
+This repository will contain all the solutions to contests on GST arena and samples covering topics in meetups. 
 
 ## Contributors
-1. Omkar Prabhu (nerdyninja)
+1. <a href="https://github.com/nerdyninja">Omkar Prabhu (nerdyninja)</a>
 
 ## What can you do?
-Found a bug, have a better solution? PRs appreciated here! 
+Found a bug, have a better solution? Forks and PRs are appreciated here! 
 
 
